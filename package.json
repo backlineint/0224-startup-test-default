@@ -13,10 +13,8 @@
 	},
 	"scripts": {
 		"dev": "next dev",
-		"build": "npm run decoupled-kit-health-check && next build && cp -r .next/static .next/standalone/.next && cp -r public .next/standalone",
-		"start": "node .next/standalone/server.js",
-		"build:mono": "next build",
-		"start:mono": "next start",
+		"build": "next build",
+		"start": "next start",
 		"lint": "next lint",
 		"lint:fix": "next lint --fix && npm run prettier:fix",
 		"prettier": "prettier '**/*.{js,jsx,md}' --check --ignore-path .prettierignore",
